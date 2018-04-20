@@ -1,0 +1,10 @@
+var intersect = closestIntersect;
+  // Draw red laser
+  ctx.strokeStyle = "#dd3838";
+  ctx.beginPath();
+  ctx.moveTo(320,180);
+  ctx.lineTo(intersect.x,intersect.y);
+  if(intersect.y === 0 || intersect.y === 640) {
+      ctx.lineTo(intersect.x,intersect.y)
+      ctx.lineTo(intersect.x,360)
+      ctx.lineTo(100,100)
